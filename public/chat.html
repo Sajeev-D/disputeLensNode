@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with GPT</title>
+    <link rel="stylesheet" href="/extra/style3.css">
+</head>
+<body>
+    <h1>Chat with GPT</h1>
+    <form id="questionnaireForm">
+        <label for="info">Provide some information:</label>
+        <textarea id="info" name="info" rows="4" cols="50"></textarea>
+        <button type="button" onclick="sendInitialPrompt()">Start Chat</button>
+    </form>
+    <div id="chatContainer" style="display:none;">
+        <div id="chatMessages"></div>
+        <input type="text" id="userMessage" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <script src="/extra/chat.js"></script>
+</body>
+</html>

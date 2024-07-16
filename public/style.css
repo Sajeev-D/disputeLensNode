@@ -1,0 +1,285 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+/******************Top section******************/
+
+#top {
+    width: 100%;
+    background-color: #ffffff; /* Light grey background */
+    border-radius: 10px;
+    margin: 2%;
+}
+
+#top nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Add this line */
+    justify-content: space-between; /* Add this line */
+    background-color: #ffffff; /* Dark grey background */
+    border-radius: 5px;
+}
+
+#top nav ul li a {
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 120%;
+    background-color: #c8651b;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#top nav ul li a:hover {
+    background-color: #944d07; /* Blue background on hover */
+    border-radius: 5px;
+    transform: scale(1.1); 
+}
+
+#top img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 100%;
+    transition: transform 0.5s; /* Add this line */
+}
+
+#top img:hover { /* Corrected hover pseudo-class */
+    transform: scale(1.1); /* Add this line */
+}
+
+/******************End of top section******************/
+
+/******************part2 section******************/
+
+#part2 {
+    height: 70vh;
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 80%; /* Adjust as needed */
+    height: 60%; /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 10px;
+    border-color: #000000;
+    transform: translate(-50%, -50%); /* Shift the video back by 50% of its width and height */
+}
+
+#foregroundVideo {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 40%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Shift the video back by 50% of its width and height */
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/******************End of part2 section******************/
+
+
+
+#benefits{
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 0%;
+    margin-right: 0%;
+
+}
+
+
+/******************Start of Benefits section******************/
+
+#Features {
+    text-align: center; /* Center the text */
+}
+
+#Features h2 {
+    color: #000000; 
+    font-size: 270%; 
+    font-family:;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#Features h3{
+    color: #000000;
+    font-size: 150%;
+}
+
+.feature-container {
+    display: flex; /* Use Flexbox */
+    justify-content: space-around; /* Distribute items evenly with equal space around them */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if there is not enough space */
+}
+
+.feature {
+    width: 28%; 
+    margin: 10px; 
+    padding: 20px; 
+    background-color: #ffdbb8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a nice effect */
+    border-radius: 5px;
+    transition: transform 0.3s; /* Smooth transformation */
+}
+
+.feature:hover {
+    transform: scale(1.05); /* Zoom in */
+}
+
+/******************End of Benefits section******************/
+
+/******************Start of Footer section******************/
+#footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffdbb8; 
+    margin: 5%; 
+    border-radius: 5px;
+} 
+
+#footer h2 {
+    color: #000000; 
+    font-size: 200%; 
+    text-align: center;
+    width: 90%;
+} 
+
+.contact_container {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #f8f8f8e1;
+    align-items: center;
+
+}
+
+.contact_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45%; /* Adjust as needed */
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/* Style for your form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form input[type="text"]{
+    margin-bottom: 3%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%; 
+    margin-top: 5%;
+}
+
+form input[type="email"] {
+    margin-bottom: 3%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%; 
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    width: 80%; 
+    margin-bottom: 5%;
+    transition: 0.5s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #c8651b; /* Darker grey background on hover */
+    color: black;
+    transform: scale(1.03);
+}
+
+/******************End of Footer section******************/
+
+/******************Start of end section******************/
+
+#end {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.footer_container .column img {
+    transition: 0.5s;
+}
+
+.footer_container .column img:hover {
+    transform: scale(1.1);
+}
+
+
+#backedBy p {
+    font-size: 100%; 
+    font-weight: bold; 
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end; /* Add this line */
+}
+
+#backedBy img {
+    width: 10%; /* Adjust as needed */
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/******************End of end section******************/
+
+
