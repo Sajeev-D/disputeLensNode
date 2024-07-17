@@ -4,26 +4,24 @@
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 h1{
-    font-size: 52px;
+    font-size: 200%;
     line-height: 2px;
     color:#000;
-    font-family:sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    
+    font-weight: 500;    
 }
 
 p{
     font-size: 14px;
     line-height: 18px;
     color:#000;
-    font-family:sans-serif;    
 }
 
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Noto Sans', serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -33,6 +31,74 @@ header {
     background-color: #ffffff;
     color: #ffffff;
     padding: 10px 0;
+}
+
+/* DESKTOP NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 17vh;
+    padding: 0 5%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+.logo img {
+    width: 40%;
+    height: auto;
+}
+
+/* WAITLIST BUTTON */
+
+.waitlist {
+    margin-left: auto;
+}
+
+.waitlist button {
+    background-color: #ce6100;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: large;
+}
+
+.waitlist button:hover {
+    background-color: #954b00;
 }
 
 /******************Top section******************/
@@ -104,11 +170,10 @@ header {
 .text-container {
     position: relative;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255); /* Semi-transparent white background */
     padding: 20px;
-    max-width: 600px;
+    max-width: 100%;
     margin: auto; /* Center horizontally */
-    border-radius: 15px;
     text-align: center;
 }
 
@@ -164,7 +229,6 @@ header {
 #Features h2 {
     color: #000000; 
     font-size: 270%; 
-    font-family:sans-serif;
     text-align: left;
     margin-bottom: 50px;
 }
