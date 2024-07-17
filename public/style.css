@@ -1,10 +1,32 @@
+:root{
+    --site-color-01: #c8651b;
+    --site-color-01-hover: #944d07;
+
+}
+
+h1{
+    font-size: 52px;
+    line-height: 2px;
+    color:#000;
+    font-family:sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+}
+
+p{
+    font-size: 14px;
+    line-height: 18px;
+    color:#000;
+    font-family:sans-serif;    
+}
+
+
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 header {
@@ -64,22 +86,44 @@ header {
 
 /******************End of top section******************/
 
-/******************part2 section******************/
+/******************Hero section******************/
 
-#part2 {
+#hero {
     height: 70vh;
     position: relative;
     width: 100%;
-    background-color: #ffffff;
+    background-image: url(../extra/hero-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* background-color: #ffffff; */
     overflow: hidden;
 }
 
+.text-container {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    max-width: 600px;
+    margin: auto; /* Center horizontally */
+    border-radius: 15px;
+    text-align: center;
+}
+
+.main-intro{
+   text-align: center;
+}
+
+
+
 #backgroundVideo {
-    position: absolute;
-    top: 50%; /* Center vertically */
+    position: relative;
+    top: 30%; /* Center vertically */
     left: 50%; /* Center horizontally */
     width: 80%; /* Adjust as needed */
-    height: 60%; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
     object-fit: cover;
     border-radius: 10px;
     border-color: #000000;
@@ -97,7 +141,7 @@ header {
     border-radius: 15px;
 }
 
-/******************End of part2 section******************/
+/******************End of Hero section******************/
 
 
 
@@ -120,7 +164,7 @@ header {
 #Features h2 {
     color: #000000; 
     font-size: 270%; 
-    font-family:;
+    font-family:sans-serif;
     text-align: left;
     margin-bottom: 50px;
 }
