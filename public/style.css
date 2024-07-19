@@ -6,6 +6,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 h1{
     font-size: 200%;
     line-height: 2px;
@@ -21,7 +34,7 @@ p{
 
 
 body {
-    font-family: 'Noto Sans', serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -41,6 +54,7 @@ nav {
     align-items: center;
     height: 17vh;
     padding: 0 5%;
+    margin-bottom: 2%;
 }
 
 .nav-links {
@@ -206,7 +220,87 @@ a:hover {
     border-radius: 15px;
 }
 
+.waitlist2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21%;
+}
+
+.waitlist2 button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3%;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: large;
+    width: 20%;
+}
+
+.waitlist2 button:hover {
+    background-color: #954b00;
+}
+
 /******************End of Hero section******************/
+
+/******************Start of About section******************/
+
+/* ABOUT SECTION */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    margin-top: 2%;
+}
+.about-image {
+    flex: 1;
+    padding-right: 40px;
+}
+.about-image img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10%;
+}
+.about-content {
+    flex: 1;
+}
+.about-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.about-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ce6100;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+.learn-more-btn:hover {
+    background-color: #954b00;
+    text-decoration: none;
+    color: white;
+}
+
+/******************End of About section******************/
 
 
 
