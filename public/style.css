@@ -221,10 +221,10 @@ a:hover {
 }
 
 .waitlist2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 21%;
+    position: absolute;
+    left: 50%;
+    bottom: 35%; 
+    transform: translateX(-50%);
 }
 
 .waitlist2 button {
@@ -242,7 +242,7 @@ a:hover {
     transition: background-color 0.3s ease;
     font-weight: bold;
     font-size: large;
-    width: 20%;
+    width: auto;
 }
 
 .waitlist2 button:hover {
@@ -280,19 +280,21 @@ a:hover {
     margin-bottom: 20px;
 }
 .about-text {
-    font-size: 1.1em;
+    font-size: 1.4em;
     line-height: 1.6;
     margin-bottom: 50px;
 }
 
 .learn-more-btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 3% 9%;
     background-color: #ce6100;
     color: white;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1.4em;
+    font-weight: bold;
     transition: background-color 0.3s ease;
+    margin-top: -15%;
 }
 .learn-more-btn:hover {
     background-color: #954b00;
