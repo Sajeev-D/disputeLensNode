@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General styling */
+#waitlist-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.form-step input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.next-btn, .back-btn, .submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-btn:hover, .back-btn, .submit-btn:hover {
+    background-color: #E66E00;
+}
+
+/* Background images rotation */
+@keyframes background-rotation {
+    0% { background-image: url(../extra/hero-background.jpg); }
+    33% { background-image: url(../extra/testImage.jpg); }
+    66% { background-image: url(../extra/testImage.jpg); }
+    100% { background-image: url(../extra/hero-background.jpg); }
+}
+
+#waitlist-page {
+    animation: background-rotation 15s infinite;
+}

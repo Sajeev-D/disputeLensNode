@@ -67,6 +67,23 @@ app.get('/', function (request, response) {
     response.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+// Route to serve the waitlist.html
+app.get('/waitlist', function (request, response) {
+    response.sendFile(path.join(__dirname, 'public', 'waitlist.html'));
+});
+
+// Route to handle form submissions from waitlist.html
+app.post('/submit_waitlist', function (request, response) {
+    const { name, email, question1, question2 } = request.body;
+    if (name && email && question1 && question2) {
+        // Process form data (e.g., save to database or send to an API)
+        response.send('Waitlist form submission successful!');
+    } else {
+        response.status(400).send('All fields are required');
+    }
+});
+
+
 app.listen(2000, function () {
     console.log("Server is up at port 2000");
 });
