@@ -31,7 +31,7 @@
                         <label for="phone">And finally, your phone number?</label>
                         <input type="tel" id="phone" name="phone">
                         <div class="buttons">
-                            <button type="submit" class="submit-btn" onclick="window.location.href='/'">Join Waitlist</button>
+                            <button type="submit" class="submit-btn">Join Waitlist</button>
                             <button type="button" class="back-btn">Back</button>
                         </div>
                     </div>
@@ -98,10 +98,11 @@
                     console.log('Request sent successfully');
                     alert('You have been added to the waitlist!');
                     //Redirect now back to the landing page at express route: "/"
-                    //window.location.href = "/";
+                    window.location.href = "/";
                 } else {
                     console.log('Unexpected response type:', response.type);
                     alert('There was an error. Please try again.');
+                    window.location.href = "/";
                 }
             })
             .catch(error => {
