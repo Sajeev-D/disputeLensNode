@@ -949,7 +949,7 @@ form input[type="submit"]:hover {
 
 .card {
     width: 50%;
-    height: auto
+    height: auto;
     border: none;
     margin: 3%;
     display: flex;

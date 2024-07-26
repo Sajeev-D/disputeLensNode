@@ -156,7 +156,8 @@
   
     .waitlist2 {
       transform: translateY(20px) !important;
-      transform: translateX(20px) !important;
+      transform: translateX(-40px) !important;
+      
     }
   
     .about-content {
@@ -182,7 +183,7 @@
 
     .waitlist2 {
         transform: translateY(20px) !important;
-        transform: translateX(20px) !important;
+        transform: translateX(-40px) !important;
       }
     
     
