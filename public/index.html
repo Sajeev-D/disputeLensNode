@@ -19,8 +19,8 @@
             <div>
                 <ul class="nav-links">
                     <li><a href="#About">About</a></li>
-                    <li><a href="#Solution">Solution</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#solutions">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="waitlist">
@@ -68,7 +68,7 @@
          <!-- Solutions Section Begin -->
          <section id="solutions">
             <div class="solutions-title-div">
-              <h1 class="solutions-title-text">Solution</h1>
+              <h1 class="solutions-title-text">Features</h1>
             </div>
             <div class="row row-cols-1 row-cols-md-2 g-4">
               <div class="col d-flex justify-content-end">
@@ -165,6 +165,26 @@
             <p>Backed by: <img src="/extra/Hatchery.png" alt="Hatchery Logo" width="100"></p>
         </section>
  -->
+
+        <!-- Contact Start -->
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-center">
+                        <h2 class="contact-title">Let us know your thoughts...</h2>
+                        <form name="submit-to-google-sheet">
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="contact-btn">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact End -->
+
         <!-- Footer Start -->
         <div class="footer-basic">
             <footer>
@@ -193,6 +213,29 @@
             </footer>
         </div>        
         <!-- Footer End -->
+
+        <!-- Contact JS -->
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw1pWTgf4fRge96hWgVeHTIf7pvAGuZ57TrS2CL5FOcNUVo6syRrRdrJ7PQ76V7RZ3DTQ/exec';
+            const form = document.forms['submit-to-google-sheet'];
+            const msg = document.getElementById("msg");
+        
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully";
+                        setTimeout(function() {
+                            msg.innerHTML = "";
+                        }, 5000);
+                        form.reset();
+                    })
+                    .catch(error => console.error('Error!', error.message));
+            });
+        </script>
+
+        <!-- End of Contact JS -->
         
         
         <!-- JS Bootstrap Tag -->

@@ -82,20 +82,29 @@
             const email = document.getElementById('email').value;
             const phone = document.getElementById('phone').value;
 
-            fetch('https://script.google.com/macros/s/AKfycbzMf49pNqFmPtb7JVrizX0IRKm59m4feZPVcW-hpR2lLSR7Hx-GWsKPK5V0mI4titVe/exec', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ name: name, email: email, phone: phone })
+            // Create a URL with query parameters
+            const url = new URL('https://script.google.com/macros/s/AKfycbwcPMTbuSr3MhM-_nTxRnwZw4bXywhrh2GjB3sou__V0aqhhOPeuu-55rW96QErMiJ-/exec');
+            url.searchParams.append('name', name);
+            url.searchParams.append('email', email);
+            url.searchParams.append('phone', phone);
+
+            // Use the fetch API to submit the data
+            fetch(url, {
+                method: 'GET',
+                mode: 'no-cors',
             })
-            .then(response => response.json())
-            .then(data => {
-                if (data.result === 'success') {
+            .then(response => {
+                if (response.type === 'opaque') {
+                    console.log('Request sent successfully');
                     alert('You have been added to the waitlist!');
                 } else {
+                    console.log('Unexpected response type:', response.type);
                     alert('There was an error. Please try again.');
                 }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error. Please try again.');
             });
         });
     </script>
