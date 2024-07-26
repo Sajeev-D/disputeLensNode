@@ -18,37 +18,58 @@
         width: 60%;
         display: block;
         margin: 0 auto;
+        
     }
   
     .waitlist {
       margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   
     .waitlist button, .waitlist2 button {
       padding: 10px 20px;
       font-size: 14px;
+      margin: 0 auto;
+      
     }
+    
+    .waitlist {
+        transform: translateX(20px);
+    }
+    
   
-    #hero {
+    /* #hero {
       height: auto;
     }
-  
+   */
     #backgroundVideo, #foregroundVideo {
       width: 90%;
     }
   
     .about-section {
+        display: flex;
       flex-direction: column;
       margin: 10%;
+      justify-content: center;
+      
     }
   
     .about-image, .about-content {
       width: 100%;
       padding: 0;
+      margin: auto;
+      align-self: center;
+    }
+    .about-image img {
+      margin-left: 40px;
     }
   
     .about-title {
       font-size: 2em;
+      text-align: center;
+      margin-top: 10%;
     }
   
     .about-text {
@@ -56,27 +77,42 @@
     }
   
     .learn-more-btn {
+        width: auto;
+        max-width: 150px;
       padding: 10px 20px;
       font-size: 1.2em;
+       displaY: block;
+        margin: 0 auto;
     }
   
     .card {
-      width: 90%;
+      width: 55%;
       margin: 10px auto;
     }
   
     .footer-content {
+        display:flex;
       flex-direction: column;
+      align-items: center;
     }
   
     .footer-left, .footer-center, .footer-right {
       margin: 10px 0;
+    }
+
+    .footer-left , .footer-right {
+        align-self: center;
     }
   
     .feature {
       width: 90%;
     }
   }
+  .footer-left img , .footer-right img {
+    width: 50%;
+    height:auto ;
+}
+
   
   /* Medium devices (tablets, 768px and up) */
   @media only screen and (min-width: 601px) and (max-width: 768px) {
@@ -102,10 +138,10 @@
     .feature {
       width: 45%;
     }
+    
   }
-  
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
     .nav-links {
       font-size: 1.3rem;
     }
@@ -117,6 +153,23 @@
     .card {
       width: 60%;
     }
+  
+    .waitlist2 {
+      transform: translateY(20px) !important;
+      transform: translateX(20px) !important;
+    }
+  
+    .about-content {
+      transform: translateX(50px) !important;
+    }
+  
+    .about-title {
+      transform: translateX(125px) !important;
+    }
+  
+    .learn-more-btn {
+      transform: translateX(120px) !important;
+    }
   }
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -124,5 +177,26 @@
     .container {
       max-width: 1140px;
       margin: 0 auto;
+    }
+
+
+    .waitlist2 {
+        transform: translateY(20px) !important;
+        transform: translateX(20px) !important;
+      }
+    
+    
+   
+  
+    .about-content {
+      transform: translateX(50px) !important;
+    }
+  
+    .about-title {
+      transform: translateX(125px) !important;
+    }
+  
+    .learn-more-btn {
+      transform: translateX(120px) !important;
     }
   }
