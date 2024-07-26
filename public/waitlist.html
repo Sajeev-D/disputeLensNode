@@ -31,7 +31,7 @@
                         <label for="phone">And finally, your phone number?</label>
                         <input type="tel" id="phone" name="phone">
                         <div class="buttons">
-                            <button type="submit" class="submit-btn" onclick="window.location.href='/'">Join Waitlist</button>
+                            <button type="submit" class="submit-btn">Join Waitlist</button>
                             <button type="button" class="back-btn">Back</button>
                         </div>
                     </div>
@@ -75,6 +75,29 @@
         });
 
         showStep(currentStep);
+
+        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+
+            fetch('https://script.google.com/macros/s/AKfycbzMf49pNqFmPtb7JVrizX0IRKm59m4feZPVcW-hpR2lLSR7Hx-GWsKPK5V0mI4titVe/exec', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name: name, email: email, phone: phone })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.result === 'success') {
+                    alert('You have been added to the waitlist!');
+                } else {
+                    alert('There was an error. Please try again.');
+                }
+            });
+        });
     </script>
 </body>
 </html>
