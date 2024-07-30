@@ -225,6 +225,7 @@ button {
     align-items: center;
     max-width: 800px;
     margin-top: 15%;  
+    margin-bottom: 15%;
     margin-left: auto;
     margin-right: auto;
     padding: 40px 40px;
@@ -324,6 +325,7 @@ button {
 
 #solutions {
     margin: 5%;
+    margin-bottom: 15%;
 }
 
 .solutions-title-div {
@@ -334,37 +336,54 @@ button {
 .solutions-title-text {
     color: black;
     font-size: 2.5em;
+    margin-bottom: 7%;
 }
 
 .card {
-    transition: all 0.3s;
-    width: 50%;
-    border: none;
-    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.card:hover {
-    transform: scale(1.02);
+.card-body {
+    flex: 0 0 auto;
 }
 
-.card-img-bottom,
-.card video {
+.card-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 600px; /* Fixed height for large screens */
+    overflow: hidden;
 }
 
-/* Ensure cards 3 and 4 images are 100% width */
-.card-img-bottom {
+.card-img-bottom-2 {
+    height: 400px;
+}
+
+.card-image-container video,
+.card-image-container img {
     width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video/image covers the container */
 }
 
-.card3  {
-    width:100%;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-image-container {
+        height: 200px; /* Adjust height for medium screens */
+    }
 }
-.card4  {
-    width:80%;
+
+@media (max-width: 576px) {
+    .card-image-container {
+        height: 150px; /* Adjust height for small screens */
+    }
 }
+
+
 /* Contact Section */
 
 #contact {
