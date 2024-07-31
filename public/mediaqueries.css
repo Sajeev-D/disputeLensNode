@@ -4,6 +4,9 @@
       flex-direction: column;
       height: auto;
       padding: 20px 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   
     .nav-links {
@@ -12,6 +15,9 @@
       flex-direction: column;
       align-items: center;
       margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .logo img {
@@ -96,8 +102,15 @@
       align-items: center;
     }
   
-    .footer-left, .footer-center, .footer-right {
-      margin: 10px 0;
+    .footer-left, .footer-right {
+      margin: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-center {
+      margin: 5%;
     }
 
     .footer-left , .footer-right {
