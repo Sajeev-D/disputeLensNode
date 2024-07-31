@@ -180,7 +180,7 @@
     }
   
     .learn-more-btn {
-      transform: translateX(120px) !important;
+      transform: translateX(50%) !important; 
     }
   }
   
@@ -205,10 +205,10 @@
     }
   
     .about-title {
-      transform: translateX(125px) !important;
+      transform: translateX(132px) !important;
     }
   
     .learn-more-btn {
-      transform: translateX(120px) !important;
+        transform: translateX(100%) !important;
     }
   }

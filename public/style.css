@@ -304,12 +304,12 @@ button {
     font-size: 1.3em;
     line-height: 2;
     color: #555;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     text-align: left;
 }
 
 .learn-more-btn {
-    display: inline-block;
+    display: flex;
     padding: 12px 24px;
     background-color: #ce6100;
     color: white;
@@ -318,6 +318,7 @@ button {
     font-size: 1.1em;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    
 }
 
 .learn-more-btn:hover {
@@ -333,6 +334,8 @@ button {
         padding: 0 10px;
         transform: translateY(-15%);
     }
+
+    
 
     .about-image, .about-content {
         flex: 0 0 100%;
@@ -360,6 +363,7 @@ button {
         align-self: center;
     }
 }
+
 
 /* Solutions Section */
 
@@ -696,3 +700,6 @@ form button:hover {
 
 
 /******************End of Footer Real section******************/
+
+
+
