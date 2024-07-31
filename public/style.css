@@ -357,12 +357,23 @@ button {
     flex-direction: column;
 }
 
+
+
+
 .card-title {
     margin-bottom: 15px;
     text-align: center;
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.4em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    color: #333;  /* Default color, you can adjust this */
+    font-weight: bold;
+    transition: color 0.3s ease;  /* Smooth transition for color change */
 }
+
+.card-title:hover {
+    color: var(--site-color-01);  /* Custom color on hover */
+}
+
 
 .video-wrapper video,
 .video-wrapper .card3 {
@@ -376,13 +387,28 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
 }
 
 .card3 img {
     max-width: 80%;
     max-height: 100%;
     object-fit: contain;
+}
+
+.upload-quote-wrapper {
+    aspect-ratio: 803 / 1448; /* Match Card3 aspect ratio */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+
+}
+
+.upload-quote-wrapper video {
+    max-width: 89%;
+    max-height: 100%;
+    object-fit: contain; /* This will fit the entire video within the container without cropping */
 }
 
 .bottom-video {
@@ -421,6 +447,16 @@ button {
         margin-bottom: 80px; /* Increased space between stacked videos */
     }
 
+   
+    .upload-quote-wrapper {
+        aspect-ratio: 803 / 1448; /* Maintain aspect ratio on mobile */
+        
+    }
+
+    .upload-quote-wrapper video {
+        aspect-ratio: 803 / 1448; /* Maintain aspect ratio on mobile */
+    }
+
     .card-title {
         margin-bottom: 15px;
         font-size: 1.4em; /* Increased font size for better readability */
@@ -435,6 +471,13 @@ button {
 @media screen and (max-width: 1200px) {
     #About {
         margin-top: 45%; /* Increased top margin to separate from Solutions section */
+    }
+}
+
+/* For large screens */
+@media screen and (min-width: 1201px) {
+    .card-title {
+        font-size: 1.4em;  /* Even larger for big screens */
     }
 }
 
