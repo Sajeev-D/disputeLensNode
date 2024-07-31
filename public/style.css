@@ -370,6 +370,7 @@ button {
     transition: color 0.3s ease;  /* Smooth transition for color change */
 }
 
+/* Hover effect for card title */
 .card-title:hover {
     color: var(--site-color-01);  /* Custom color on hover */
 }
