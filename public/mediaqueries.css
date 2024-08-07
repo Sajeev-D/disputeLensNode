@@ -4,6 +4,9 @@
       flex-direction: column;
       height: auto;
       padding: 20px 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   
     .nav-links {
@@ -12,6 +15,10 @@
       flex-direction: column;
       align-items: center;
       margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateX(-12%);
     }
 
     .logo img {
@@ -26,6 +33,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      
+
     }
   
     .waitlist button, .waitlist2 button {
@@ -34,11 +43,6 @@
       margin: 0 auto;
       
     }
-    
-    .waitlist {
-        transform: translateX(20px);
-    }
-    
   
     /* #hero {
       height: auto;
@@ -96,8 +100,15 @@
       align-items: center;
     }
   
-    .footer-left, .footer-center, .footer-right {
-      margin: 10px 0;
+    .footer-left, .footer-right {
+      margin: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-center {
+      margin: 5%;
     }
 
     .footer-left , .footer-right {
@@ -169,7 +180,7 @@
     }
   
     .learn-more-btn {
-      transform: translateX(120px) !important;
+      transform: translateX(50%) !important; 
     }
   }
   
@@ -194,10 +205,10 @@
     }
   
     .about-title {
-      transform: translateX(125px) !important;
+      transform: translateX(132px) !important;
     }
   
     .learn-more-btn {
-      transform: translateX(120px) !important;
+        transform: translateX(100%) !important;
     }
   }
