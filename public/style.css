@@ -700,6 +700,71 @@ form button:hover {
 
 
 /******************End of Footer Real section******************/
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: 10% auto;
+    padding: 0 20px;
+}
 
+.about-content {
+    width: 100%;
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.about-title {
+    font-size: 2.8em;
+    color: #333;
+    margin-bottom: 80px;
+    text-align: center;
+    width: 100%;
+}
 
+.video-container {
+    width: 100%;
+    max-width: 1400px; /* Set to the exact width you want */
+    margin-bottom: 40px;
+    position: relative;
+    padding-top: 56.54%; /* (579 / 1024) * 100 to maintain aspect ratio */
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.learn-more-btn {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .video-container {
+        max-width: 100%;
+        padding-top: 56.54%; /* Maintain aspect ratio on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        margin: 15% auto;
+    }
+
+    .about-title {
+        font-size: 2.2em;
+        margin-bottom: 30px;
+        
+    }
+
+    .video-container {
+        margin-bottom: 30px;
+    }
+}

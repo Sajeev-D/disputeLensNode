@@ -172,15 +172,15 @@
     }
   
     .about-content {
-      transform: translateX(50px) !important;
+      transform: translateX(50px) ;
     }
   
     .about-title {
-      transform: translateX(125px) !important;
+      transform: translateX(125px) ;
     }
   
     .learn-more-btn {
-      transform: translateX(50%) !important; 
+      transform: translateX(50%) ; 
     }
   }
   
@@ -199,7 +199,7 @@
     
     
    
-  
+/*   
     .about-content {
       transform: translateX(50px) !important;
     }
@@ -211,4 +211,4 @@
     .learn-more-btn {
         transform: translateX(100%) !important;
     }
-  }
+  } */
