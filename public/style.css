@@ -768,3 +768,19 @@ form button:hover {
         margin-bottom: 30px;
     }
 }
+
+
+
+.waitlist2 button {
+    background-color: #007bff; /* Primary color */
+    color: white;              /* Text color */
+    padding: 10px 20px;        /* Padding for the button */
+    border: none;              /* Remove border */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 18px;           /* Font size */
+    cursor: pointer;           /* Pointer cursor on hover */
+}
+
+.waitlist2 button:hover {
+    background-color: #0056b3; /* Darken button on hover */
+}

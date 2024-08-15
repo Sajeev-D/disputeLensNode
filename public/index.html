@@ -31,19 +31,12 @@
 
         <!-- Hero Section Start -->
         <section id="hero">
-            <!-- <div class="text-container">
-                <div class="main-intro">
-                     <h1>Renovate with Confidence, Quote with Clarity</h1>
-                    <p></p>
-                </div> 
-            </div>-->
-
-            <!-- <video id="backgroundVideo" autoplay loop muted>
-                <source src="/extra/heroVid.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video> -->
             <div class="waitlist2">
-                <button onclick="window.location.href='/waitlist'">Join Waitlist</button>
+                <!-- Upload Quote Button in Hero Section -->
+                <form id="quote-upload-form" action="/upload-quote" method="post" enctype="multipart/form-data">
+                    <input type="file" id="quote-file" name="quote-file" accept=".pdf,.doc,.docx,.txt" style="display: none;" onchange="this.form.submit();">
+                    <button type="button" onclick="document.getElementById('quote-file').click();">Upload Quote</button>
+                </form>
             </div>
             <video id="foregroundVideo" autoplay loop muted>
                 <source src="extra/ScreenRecord.mp4" type="video/mp4">
