@@ -215,8 +215,9 @@ button {
     position: absolute;
     left: 50%;
     bottom: 35%; 
-    transform: translateX(-50%);
-}
+    padding-top: 10%;
+     transform: translateX(-25%); 
+} 
 
 /* Problem Section */
 
@@ -772,15 +773,22 @@ form button:hover {
 
 
 .waitlist2 button {
-    background-color: #007bff; /* Primary color */
+    background-color: var(--site-color-01); /* Primary color */
     color: white;              /* Text color */
     padding: 10px 20px;        /* Padding for the button */
+   
     border: none;              /* Remove border */
     border-radius: 5px;        /* Rounded corners */
     font-size: 18px;           /* Font size */
     cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    transform: translatex(-25%);
 }
 
 .waitlist2 button:hover {
-    background-color: #0056b3; /* Darken button on hover */
+    background-color: var(--site-color-01-hover)
 }

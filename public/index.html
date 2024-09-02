@@ -33,10 +33,9 @@
         <section id="hero">
             <div class="waitlist2">
                 <!-- Upload Quote Button in Hero Section -->
-                <form id="quote-upload-form" action="/upload-quote" method="post" enctype="multipart/form-data">
-                    <input type="file" id="quote-file" name="quote-file" accept=".pdf,.doc,.docx,.txt" style="display: none;" onchange="this.form.submit();">
-                    <button type="button" onclick="document.getElementById('quote-file').click();">Upload Quote</button>
-                </form>
+                
+                <button type="button" onclick="window.open('https://checkyourquote.netlify.app/', '_blank')">Check Your Quote</button>
+                
             </div>
             <video id="foregroundVideo" autoplay loop muted>
                 <source src="extra/ScreenRecord.mp4" type="video/mp4">
